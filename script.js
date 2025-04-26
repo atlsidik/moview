@@ -23,7 +23,7 @@ function display_on_page(movies){
 	main.innerHTML=''
 
 	movies.forEach((movie) =>{
-		const {title , poster_path , vote, overview} = movie
+		const {title , poster_path , vote_average, overview} = movie
 
 		const movie_el = document.createElement('div');
 		movie_el.classList.add('movie')
@@ -32,7 +32,7 @@ function display_on_page(movies){
 		 <img src= "${IMG_SORC_PATH + poster_path}" alt = "$(title)">
 			<div class="movie-info">
 			<h3>${title}</h3>
-				<span class ="${getClassByRating(vote)}">${vote}</span>
+				<span class ="${getClassByRating(vote_average)}">${vote_average}</span>
 			</div>
 			<div class = "overview">
 			<h3>Overview</h3>
@@ -44,8 +44,8 @@ function display_on_page(movies){
 
 }
 
- async function getClassByRating(vote){
-	if(vote>=8){
+  function getClassByRating(vote){
+	if(vote>=7){
 		return 'green'
 	}
 	else if (vote >=5){

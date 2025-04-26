@@ -41,6 +41,10 @@ heaer {
 	padding-right: 5px;
 	padding-left : 3px;
 }
+.topbar #home {
+	text-decoration : none;
+
+}
 .topbar .search {
 	background-color : #636363;
 	border-radius : 25px;
@@ -98,14 +102,19 @@ letter-spacing : 1px;
 }
 
 .movie-info span.green {
-	color : olive;
+	color :  #1db954;;
+	font-weight : bold;
+
 }
 
 .movie-info span.red {
-	color : sage;
+	color : red;
+	font-weight : bold;
 }
 .movie-info span.orange {
-	color : orange;
+	color : purple;
+	font-weight : bold;
+	
 }
 
 
