@@ -1,2 +1,2 @@
 Demo:
-github.io/atlsidik/moview
+https://github.io/atlsidik/moview
